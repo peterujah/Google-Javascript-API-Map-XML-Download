@@ -3,7 +3,7 @@ Download location coordinates from XML for multiple addresses
 
 
 # setting map options
-const settings = {
+	const settings = {
 		"apiKey": "javascript-map-api-key",
 		onChangeUrlApi: "_api/change.xml?geolocate=true&",
 		onLoadUrlApi: "_api/load.xml?",
@@ -15,7 +15,7 @@ const settings = {
 			country: "my", /*[]*/
 			componentRestrictions: {'country': 'us'},
 			countryRestrict: {'country': 'us'}
-        },
+	},
 		customLabel: {
 			restaurant: {label: 'R'},
 			bar: {label: 'B'}
@@ -33,4 +33,4 @@ const settings = {
 		  ripple: "image/animation-ripple.svg",
 		  pinned:  "image/store-home-theme.svg",
 		}
-};
+	};
