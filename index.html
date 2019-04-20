@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple</title> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head> 
+<body>
+
+<input id="serchLocation" type="search" name="serchLocation" placeholder="Enter your address" onFocus="blockByteGoogleMap.geolocate()"/>
+<input type="hidden" class="field" name="route" id="route"/>
+<input type="hidden" class="field" name="city" id="locality" />
+<input type="hidden" class="field" name="state" id="administrative_area_level_1"/>
+<input type="hidden" class="field" name="country" id="country" />
+<div id="map" style="width: 1000px; height: 500px;"></div>
+
+<script>
+const settings = {
+		"apiKey": "AIzaSyBUcq4F3ctaVMVtlgMaV9m50oZ81Lo7Pbs",
+		/*GEP parameters city|country|state*/
+		onChangeUrlApi: "_api/change.xml?geolocate=true&", /*?||&*/
+		onLoadUrlApi: "_api/load.xml?",
+		searchElementId: 'serchLocation',
+		mapElementId: 'map',
+		current: {
+			center: { lat:  -33.8688,  lng:151.2195},
+			zoom: 16, 
+			country: "my", /*[]*/
+			componentRestrictions: {'country': 'us'},
+			countryRestrict: {'country': 'us'}
+        },
+		customLabel: {
+			restaurant: {label: 'R'},
+			bar: {label: 'B'}
+		},
+		customize: {
+			mapTypeControl: true,
+			panControl: true,
+			zoomControl: true,
+			streetViewControl: true,
+			clickableIcons: true,
+			fullscreenControl: true,
+			placeSearchInMapBox: false
+		},
+		icons: {
+		  ripple: "image/animation-ripple.svg",
+		  pinned:  "image/store-home-theme.svg",
+		}
+};
+</script>
+<script src="js/bbt.ui.googlemap.min.js"></script>
+</body>
+</html>
