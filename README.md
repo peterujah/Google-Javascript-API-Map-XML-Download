@@ -54,6 +54,6 @@ Allow you to specify animation image to show when typed location
 ##### icons.pinned:
 Allow you to specify pinned adresses
 
-####Required Libery
+#### Required Libery
 
 jQuery
