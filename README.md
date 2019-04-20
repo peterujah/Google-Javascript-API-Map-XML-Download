@@ -37,10 +37,14 @@ Download location coordinates from XML for multiple addresses
 
 # Instruction on map setting additional options
 
+In other to set a custom api url parameters you can use "https://example.com/api.php?foo=bar&bob=alic&", make sure you add extra `&` when you have parameter?s to the url. Without any url parameter set the link in this way "https://example.com/api.php?"
+
 ##### onChangeUrlApi: 
-Allow you to specify the url where the api will download xml data when a new location is being typed
+Allow you to specify the url where the api will download xml data when a new location is being typed.
+Every request to server will send a parameters ["change=true", "city=foo", "state=foo", "country=foo"]
 ##### onLoadUrlApi:
 Allow you to specify the url where the map api will download xml data when the page is loaded.
+Every request to server will send a parameters ["ready=true", "city=foo", "state=foo", "country=foo"]
 ##### searchElementId:
 Allow you to specify the search input element id, default id is 'serchLocation'
 ##### mapElementId:
