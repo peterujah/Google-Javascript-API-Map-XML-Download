@@ -15,7 +15,7 @@ Download location coordinates from XML for multiple addresses
 			country: "my", /*[]*/
 			componentRestrictions: {'country': 'us'},
 			countryRestrict: {'country': 'us'}
-	},
+		},
 		customLabel: {
 			restaurant: {label: 'R'},
 			bar: {label: 'B'}
@@ -34,3 +34,17 @@ Download location coordinates from XML for multiple addresses
 		  pinned:  "image/store-home-theme.svg",
 		}
 	};
+
+# Instruction on map setting 
+
+## onChangeUrlApi: 
+Allow you to specify the url where the api will download xml data when a new location is being typed
+
+## onLoadUrlApi:
+Allow you to specify the url where the map api will download xml data when the page is loaded.
+
+## searchElementId:
+Allow you to specify the search input element id, default id is 'serchLocation'
+
+## mapElementId:
+Allow you to specify the map canvas element id, default id is 'map'
