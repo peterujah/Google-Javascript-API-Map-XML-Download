@@ -35,16 +35,18 @@ Download location coordinates from XML for multiple addresses
 		}
 	};
 
-# Instruction on map setting 
+# Instruction on map setting additional options
 
-## onChangeUrlApi: 
+##### onChangeUrlApi: 
 Allow you to specify the url where the api will download xml data when a new location is being typed
-
-## onLoadUrlApi:
+##### onLoadUrlApi:
 Allow you to specify the url where the map api will download xml data when the page is loaded.
-
-## searchElementId:
+##### searchElementId:
 Allow you to specify the search input element id, default id is 'serchLocation'
-
-## mapElementId:
+##### mapElementId:
 Allow you to specify the map canvas element id, default id is 'map'
+##### icons.ripple:
+Allow you to specify animation image to show when typed location
+##### icons.pinned:
+Allow you to specify pinned adresses
+
